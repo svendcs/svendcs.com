@@ -59,6 +59,7 @@ section {
 /* List styling */
 .cv-list {
     list-style-type: "-";
+    padding-left: 10px;
 }
 
 .cv-list > li {
