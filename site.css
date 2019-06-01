@@ -71,6 +71,7 @@ section {
 
 .cv-list p.cv-info {
     margin-left: 10px;
+    margin-bottom: 5px;
     color: #434c5e;
     font-size: 0.9rem;
 }
