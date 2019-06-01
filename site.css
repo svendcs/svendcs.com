@@ -61,7 +61,7 @@ section {
     list-style-type: "-";
 }
 
-.cv-list li {
+.cv-list > li {
     padding-left: 10px;
 }
 
@@ -69,11 +69,21 @@ section {
     margin: 0;
 }
 
-.cv-list p.cv-info {
+.cv-list .cv-info {
     margin-left: 10px;
-    margin-bottom: 5px;
+}
+
+.cv-list .cv-info:last-child {
+    margin-bottom: 10px;
+}
+
+.cv-list p.cv-info, .cv-list ul.cv-info > li {
     color: #434c5e;
     font-size: 0.9rem;
+}
+
+.cv-list ul.cv-info {
+    list-style-type: lower-roman;
 }
 
 .cv-list li small {
