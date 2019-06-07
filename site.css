@@ -56,6 +56,11 @@ section {
     color: #434c5e;
 }
 
+#social-icons li a:hover {
+    /* color: #434c5e; */
+    color: #5e81ac;
+}
+
 /* List styling */
 .cv-list {
     list-style-type: "-";
