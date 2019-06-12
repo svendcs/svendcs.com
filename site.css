@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Martel';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fonts/martel-light.otf');
+}
+
+@font-face {
+    font-family: 'Martel Sans';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fonts/martel-sans-light.otf');
+}
+
 body {
     font-size: 100%;
 }
