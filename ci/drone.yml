@@ -1,0 +1,21 @@
+---
+kind: pipeline
+type: docker
+name: linux
+
+steps:
+-   name: deploy
+    image: drillster/drone-rsync
+    settings:
+      hosts: ["stracci.svendcs.com"]
+      user: ci
+      key:
+        from_secret: key
+      source: html/
+      target: /var/www/svendcs.com/html
+      recursive: true
+      delete: true
+    when:
+        branch:
+        -   master
+
