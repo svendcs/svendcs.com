@@ -1,115 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Svend Christian Svendsen</title>
+    <title>Svend Christian Svendsen</title>
 
-        <!-- Martel Font -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Martel+Sans:300|Martel:300&display=swap" rel="stylesheet"> -->
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/799039ce2a.js"></script>
 
-        <!-- Font Awesome -->
-        <script src="https://use.fontawesome.com/799039ce2a.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="site.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Svend Christian Svendsen</h1>
+      <ul id="social-icons">
+        <li><a href="https://www.linkedin.com/in/svendcs"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>
+        <li><a href="https://github.com/svendcs/"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
+        <li><a href="mailto:svendcs@svendcs.com"><i class="fa fa-envelope" aria-hidden="true"></i> Mail</a></li>
+        <li><a href="svendcs@svendcs.com.asc"><i class="fa fa-lock" aria-hidden="true"></i> PGP</a></li>
+      </ul>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="site.css">
-    </head>
-    <body>
-        <div class="container">
-            <h1>Svend Christian Svendsen</h1>
-            <ul id="social-icons">
-                <li><a href="https://www.linkedin.com/in/svendcs"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>
-                <li><a href="https://github.com/svendcs/"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
-                <li><a href="mailto:svendcs@svendcs.com"><i class="fa fa-envelope" aria-hidden="true"></i> Mail</a></li>
-                <li><a href="svendcs@svendcs.com.asc"><i class="fa fa-lock" aria-hidden="true"></i> PGP</a></li>
+      <p id="introduction">Welcome to my homepage. I am a PhD Fellow under the supervision of Prof. Lars Arge. My research interests lie in the area of I/O efficient algorithms.</p>
+
+      <section>
+        <h2>Employment</h2>
+        <ul class="cv-list">
+          <li>PhD Fellow at Center for Massive Data Algorithmics <small>Since August, 2016</small></li>
+          <li>Student Programmer at SCALGO <small>November, 2015 - July, 2016</small></li>
+          <li>Student Programmer at Center for Massive Data Algorithmics <small>November, 2013 - October, 2015</small></li>
+          <li>Software Developer at Døgndata <small>July, 2013 - October, 2013</small></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <ul class="cv-list">
+          <li>Computer Science Phd, Aarhus University <small>August, 2016 - July, 2021 (expected)</small></li>
+          <li>Computer Science Msc, Aarhus University <small>August, 2016 - July, 2019</small></li>
+          <li>Computer Science Bsc, Aarhus University <small>August, 2013 - July, 2016</small></li>
+          <li>
+            <p>STX student, Munkensdam Gymnasium <small>August, 2010 - July, 2013</small></p>
+            <p class="cv-info">Danish high school education. Mathematics A, Physics A, Chemistry A</p>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Teaching</h2>
+        <ul class="cv-list">
+          <li>Optimization <small>2017, 2018 and 2019</small></li>
+          <li>Combinatorical Search <small>Summer, 2017</small></li>
+          <li>Perspectives in Computer Science <small>Fall, 2016</small></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Coding</h2>
+        <ul class="cv-list">
+          <li>
+            <p>SCALGO SCAN<small>January, 2016 - July, 2016</small></p>
+            <p class="cv-info">While at SCALGO I worked on the product SCAN(SCALGO Combinatorial Anti Noise); a commercial product for cleaning massive sonar point clouds in external memory. My work consisted of reimplementing large parts of the code in the <a href="https://github.com/thomasmoelhave/tpie">TPIE</a> pipelining framework allowing for higher performance and easier maintenance of the code base.</p>
+          </li>
+          <li>
+            <p>GeoDanmark coast polygon <small>November, 2015 - December, 2015</small></p>
+            <p class="cv-info">At SCALGO I also wrote large parts of code for an early version of software to compute a closed land polygon of Denmark based on GeoDanmark data.</p>
+          </li>
+          <li>
+            <p>Compiler Project <small>September, 2015 - December, 2015</small></p>
+            <p class="cv-info">Writing a compiler for <a href="https://www.lrde.epita.fr/~tiger/tiger.html">Tiger</a> in Standard ML.</p>
+          </li>
+          <li>
+            <p>TPIE - The Templated Portable I/O Environment <small>November, 2013 - October, 2015</small></p>
+            <p class="cv-info">TPIE is a library for manipulating large datasets on a desktop computer. TPIE provides implementations of several external memory algorithms and data structures as well as a framework for efficient and portable data processing. While working as a student programmer at MADALGO the majority of my time was spent working on TPIE. Some of my work is described here:</p>
+
+            <ul class="cv-info">
+              <li>B-tree implementation in external memory and code for handlings blocks on disk. Based upon existing ab-tree code in internal memory.</li>
+              <li>Improvements to the <a href="http://madalgo.au.dk/tpie/doc/master/pipelining.html">pipelining framework</a> by adding functionality to change the order in which pipeline phases are run(flush priorities) and limiting sending of out-of-band data.</li>
+              <li>Moving large parts of TPIE code to C++11 making use of C++ move semantics and perfect forwarding.</li>
+              <li>Organizing and writing documentation for TPIE.</li>
+              <li>Prototyping improvements on the multiway-merge sorting algorithm implemented in TPIE.</li>
             </ul>
+          </li>
+          <li>
+            <p>Dagbogsprogrammet <small>July, 2013 - October, 2013</small></p>
+            <p class="cv-info">While working as a software developer at DøgnData I worked on <a href="https://dagbogsprogrammet.dk/">Dagbogsprogrammet</a>. Dagbogsprogrammet brings together all the written work concerning the children/youth at institutions and serves as an internal communications platform.</p>
+          </li>
+          <li>
+            <p>SofusCare <small>July, 2013 - October, 2013</small></p>
+            <p class="cv-info">At DøgnData I also worked on <a href="https://sofus.dk/">SofusCare</a>. SofusCare is a software tool for residential homes that assists in the daily documentation when working with children and adults with special needs.</p>
+          </li>
+        </ul>
+      </section>
 
-            <p id="introduction">Welcome to my homepage. I am a PhD Fellow under the supervision of Prof. Lars Arge. My research interests lie in the area of I/O efficient algorithms.</p>
-
-            <section>
-                <h2>Employment</h2>
-                <ul class="cv-list">
-                    <li>PhD Fellow at Center for Massive Data Algorithmics <small>Since August, 2016</small></li>
-                    <li>Student Programmer at SCALGO <small>November, 2015 - July, 2016</small></li>
-                    <li>Student Programmer at Center for Massive Data Algorithmics <small>November, 2013 - October, 2015</small></li>
-                    <li>Software Developer at Døgndata <small>July, 2013 - October, 2013</small></li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Education</h2>
-                <ul class="cv-list">
-                    <li>Computer Science Phd, Aarhus University <small>August, 2016 - July, 2021 (expected)</small></li>
-                    <li>Computer Science Msc, Aarhus University <small>August, 2016 - July, 2019</small></li>
-                    <li>Computer Science Bsc, Aarhus University <small>August, 2013 - July, 2016</small></li>
-                    <li>
-                        <p>STX student, Munkensdam Gymnasium <small>August, 2010 - July, 2013</small></p>
-                        <p class="cv-info">Danish high school education. Mathematics A, Physics A, Chemistry A</p>
-                    </li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Teaching</h2>
-                <ul class="cv-list">
-                    <li>Optimization <small>2017, 2018 and 2019</small></li>
-                    <li>Combinatorical Search <small>Summer, 2017</small></li>
-                    <li>Perspectives in Computer Science <small>Fall, 2016</small></li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Coding</h2>
-                <ul class="cv-list">
-                    <li>
-                        <p>SCALGO SCAN<small>January, 2016 - July, 2016</small></p>
-                        <p class="cv-info">While at SCALGO I worked on the product SCAN(SCALGO Combinatorial Anti Noise); a commercial product for cleaning massive sonar point clouds in external memory. My work consisted of reimplementing large parts of the code in the <a href="https://github.com/thomasmoelhave/tpie">TPIE</a> pipelining framework allowing for higher performance and easier maintenance of the code base.</p>
-                    </li>
-                    <li>
-                        <p>GeoDanmark coast polygon <small>November, 2015 - December, 2015</small></p>
-                        <p class="cv-info">At SCALGO I also wrote large parts of code for an early version of software to compute a closed land polygon of Denmark based on GeoDanmark data.</p>
-                    </li>
-                    <li>
-                        <p>Compiler Project <small>September, 2015 - December, 2015</small></p>
-                        <p class="cv-info">Writing a compiler for <a href="https://www.lrde.epita.fr/~tiger/tiger.html">Tiger</a> in Standard ML.</p>
-                    </li>
-                    <li>
-                        <p>TPIE - The Templated Portable I/O Environment <small>November, 2013 - October, 2015</small></p>
-                        <p class="cv-info">TPIE is a library for manipulating large datasets on a desktop computer. TPIE provides implementations of several external memory algorithms and data structures as well as a framework for efficient and portable data processing. While working as a student programmer at MADALGO the majority of my time was spent working on TPIE. Some of my work is described here:</p>
-
-                        <ul class="cv-info">
-                            <li>B-tree implementation in external memory and code for handlings blocks on disk. Based upon existing ab-tree code in internal memory.</li>
-                            <li>Improvements to the <a href="http://madalgo.au.dk/tpie/doc/master/pipelining.html">pipelining framework</a> by adding functionality to change the order in which pipeline phases are run(flush priorities) and limiting sending of out-of-band data.</li>
-                            <li>Moving large parts of TPIE code to C++11 making use of C++ move semantics and perfect forwarding.</li>
-                            <li>Organizing and writing documentation for TPIE.</li>
-                            <li>Prototyping improvements on the multiway-merge sorting algorithm implemented in TPIE.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <p>Dagbogsprogrammet <small>July, 2013 - October, 2013</small></p>
-                        <p class="cv-info">While working as a software developer at DøgnData I worked on <a href="https://dagbogsprogrammet.dk/">Dagbogsprogrammet</a>. Dagbogsprogrammet brings together all the written work concerning the children/youth at institutions and serves as an internal communications platform.</p>
-                    </li>
-                    <li>
-                        <p>SofusCare <small>July, 2013 - October, 2013</small></p>
-                        <p class="cv-info">At DøgnData I also worked on <a href="https://sofus.dk/">SofusCare</a>. SofusCare is a software tool for residential homes that assists in the daily documentation when working with children and adults with special needs.</p>
-                    </li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Programming Competitions</h2>
-                <ul class="cv-list">
-                    <li>NWERC <small>2013, 2015, 2016, 2017 - Best ranking is 13 of 120</small></li>
-                    <li>NCPC <small>2013, 2014, 2016, 2017 - Best ranking is 27 of 253 (2nd best team in Denmark)</small></li>
-                    <li>IOI 2013 <small>July, 2013 - Bronze Medal</small></li>
-                    <li>IOI 2012 <small>September, 2012 - Bronze Medal</small></li>
-                    <li>IOI 2011 <small>July, 2011</small></li>
-                    <li>Dansk Datalogi Dyst <small>2011, 2012, 2013</small></li>
-                </ul>
-            </section>
-        </div>
-    </body>
+      <section>
+        <h2>Programming Competitions</h2>
+        <ul class="cv-list">
+          <li>NWERC <small>2013, 2015, 2016, 2017 - Best ranking is 13 of 120</small></li>
+          <li>NCPC <small>2013, 2014, 2016, 2017 - Best ranking is 27 of 253 (2nd best team in Denmark)</small></li>
+          <li>IOI 2013 <small>July, 2013 - Bronze Medal</small></li>
+          <li>IOI 2012 <small>September, 2012 - Bronze Medal</small></li>
+          <li>IOI 2011 <small>July, 2011</small></li>
+          <li>Dansk Datalogi Dyst <small>2011, 2012, 2013</small></li>
+        </ul>
+      </section>
+    </div>
+  </body>
 </html>
 
