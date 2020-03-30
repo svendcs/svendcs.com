@@ -4,8 +4,8 @@ type: docker
 name: linux
 
 steps:
--   name: deploy
-    image: drillster/drone-rsync
+- name: deploy
+  image: drillster/drone-rsync
     settings:
       hosts: ["stracci.svendcs.com"]
       user: ci
@@ -16,6 +16,6 @@ steps:
       recursive: true
       delete: true
     when:
-        branch:
-        -   master
+      branch:
+      - master
 
