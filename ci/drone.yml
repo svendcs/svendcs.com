@@ -14,7 +14,7 @@ steps:
   - eval `ssh-agent -s`
   - echo "$SSH_KEY" | ssh-add -
   - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
-  - rsync --delete -ra -e "ssh -p 22" html/ ci@stracci.svendcs.com:/var/www/svendcs.com/html
+  - rsync --delete -ra -e "ssh -p 22" html/ ci@svendcs.com:/var/www/svendcs.com/html
   when:
     branch:
     - master
